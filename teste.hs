@@ -26,9 +26,6 @@ D = (Booleano, Booleano, Char)
 cubo :: Double -> Double
 cubo n = n * n * n
 
-main :: IO ()
-main = putStrLn (show(cubo 5))
-
 {-3.Escreva uma função em Haskell para encontrar a soma de três valores do tipo `Double`. Qual é o tipo dessa função?
 -}
 
@@ -47,3 +44,13 @@ bhaskara a b c =
     let x1 = (-b + sqrt((delta a b c)))/2*a
         x2 = (-b - sqrt((delta a b c)))/2*a
     in (x1, x2)
+
+{- Essa função é do tipo Float -}
+
+{-5. Escreva uma função em Haskell para inverter uma lista. Qual é o tipo dessa função?-}
+
+inverte :: [x] -> [x]
+inverte [] = []
+inverte (primeiro:resto) = inverte resto ++ [primeiro]
+
+{- Essa função aceita qualquer tipo -}
