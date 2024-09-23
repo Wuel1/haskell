@@ -90,4 +90,14 @@ g. `append "squid" ['a', 'b']`
 h. `my_map`
 i. `my_map (my_const True)`
 
+a. O tipo de my_const será inferido através da sua definição
+b. my_const está parcialmente iniciado com o argumento True, logo a expressão é do tipo Bool
+c. O tipo de append será inferido através da sua definição
+d. append está parcialmente iniciado com uma lista vazia, provavelmente a função resultante será uma lista de qualquer tipo 
+e. append está parcialmente iniciado com uma lista de booleanos, logo expressão é do tipo Bool
+f. A expressão irá gerar um erro de tipo, já que em haskell não é possível realizar operações com listas de elementos de tipos diferentes
+g. Como "squid" assim como ["a", "b"] são listas de caracteres, a expressão é do tipo Char 
+h. O tipo de my_map será inferido através da sua definição
+i. Como "my_const True" tem um tipo Bool, my_map também será do mesmo tipo, logo a expressão é Bool
+
 ----------------------------------------------------------------------------------------------------
